@@ -1,0 +1,48 @@
+.-promo
+  width 100%
+  text-align center
+  margin-bottom 2em
+  &__link
+    float: right;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 270px;
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+    margin: -35px 0 0 0;
+    font-family: 'Neucha', cursive;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 2em;
+    padding-top: 10px;
+    for n in 1..4
+      &_color_{n}
+        background-image url("./img/"+n+".png")
+  &__glob-wrap
+    display inline-block
+    &:hover .-promo__info
+      transition: top 0.8s ease-out 0s;
+      top 0%
+  &__wrap
+    position relative
+    overflow hidden
+  &__info
+    background-color: #2B2B2B;
+    opacity: 0.9;
+    padding: 0 20px 0 5px;
+    position: absolute;
+    top: 100%;
+    font-family: sans-serif;
+    font-size: 8pt;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    text-align left
+  &__media
+    min-height 100px
+    background-color lightgrey
+    &:hover
+      opacity 0.8

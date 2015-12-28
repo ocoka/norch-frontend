@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Testout touch menu</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <style type="text/css">
+    .sub-menu {
+      display: none;
+    }
+    .menu:hover>.sub-menu,.menu:active>.sub-menu {
+      display: block;
+    }
+    .menu {
+      border:1px dashed grey;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li aria-haspopup="true" class="menu menu_l1">
+        <a href="#about">
+          ABOUT
+        </a>
+        <ul class="sub-menu">
+          <li class="menu menu_l2">
+            <a href="#about_1">
+              ...our story
+            </a>
+
+          </li>
+          <li class="menu menu_l2">
+            <a href="#about_2">
+              ...our intentions
+            </a>
+
+          </li>
+          <li aria-haspopup="true" class="menu menu_l2">
+            <a href="#about_3">
+              ...how to find us
+            </a>
+            <ul class="sub-menu">
+              <li class="menu menu_l3">
+                <a href="#about_31">
+                  ...in Mexico
+                </a>
+
+              </li>
+              <li class="menu menu_l3">
+                <a href="#about_32">
+                  ...in Australia
+                </a>
+
+              </li>
+              <li class="menu menu_l3">
+                <a href="#about_33">
+                  ...in Moscow
+                </a>
+
+              </li>
+              <li class="menu menu_l3">
+                <a href="#about_34">
+                  ...in Iraq
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu menu_l2">
+            <a href="#about_4">
+              ...feedback
+            </a>
+
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>
